@@ -48,7 +48,7 @@ class Login extends Component {
     script.src = "https://developers.kakao.com/sdk/js/kakao.min.js";
     document.head.appendChild(script);
     script.onload = () => {
-      window.Kakao.init("5e8e12531dcf57d869bb229c445390ef");
+      window.Kakao.init("my-js-appkey");
       if (window.Kakao.Auth.getAccessToken()) {
         console.log("액세스 토큰이 존재합니다. 세션을 유지합니다.");
         this.setState({
